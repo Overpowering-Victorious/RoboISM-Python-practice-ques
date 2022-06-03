@@ -1,0 +1,21 @@
+#Que1
+
+list1=[]
+
+n=int(input("Enter size list: "))
+
+for i in range(0,n):
+    ele=int(input())
+    
+    list1.append(ele)
+    
+s=input("String: ")
+
+if s=="asc" or s=="desc":
+    list1.sort()
+    if s=="desc":
+        list1.reverse()
+    print(list1)
+
+if s=="none":
+    print(list1)
